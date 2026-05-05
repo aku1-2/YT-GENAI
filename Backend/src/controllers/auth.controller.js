@@ -1,3 +1,12 @@
+const jwt = require("jsonwebtoken");
+
+const token = jwt.sign(
+   { userId: user._id },
+   process.env.JWT_SECRET,
+   { expiresIn: "7d" }
+);
+
+
 const userModel = require("../models/user.model")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
