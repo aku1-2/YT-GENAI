@@ -4,16 +4,16 @@ const mongoose= require('mongoose');
 /**
  * job description schema
  * resume text
- * self description
+ * self-description
  * 
  * 
  * technical questions
- * Behavioral questions
+ * Behavioural questions
  * Skill gaps
  * preparation plan: [{
  *     day: Number
  *     focus
- *     task   
+ *     task :- array of string  
  * }]
  * matchScore: Number
  * 
